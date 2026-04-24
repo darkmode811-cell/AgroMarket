@@ -1,59 +1,77 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AgroMarket</title>
-<style>
-body {margin:0;font-family:Arial;background:#f4f4f4;}
-header {background:#2e7d32;color:white;padding:20px;text-align:center;}
-nav {background:#1b5e20;padding:10px;text-align:center;}
-nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
-section {padding:40px;text-align:center;}
-.hero {background:white;}
-.products {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
-.card {background:white;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-button {background:#2e7d32;color:white;border:none;padding:10px 15px;border-radius:5px;cursor:pointer;}
-.about, .contact {background:white;margin-top:20px;}
-footer {background:#1b5e20;color:white;text-align:center;padding:15px;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agromarket</title>
+  <style>
+    *{box-sizing:border-box}
+    body{font-family:Arial, sans-serif;margin:0;background:#f4f7f5;color:#222}
+    header{background:linear-gradient(120deg,#0a7d2c,#13a84a);color:#fff;padding:30px 20px;text-align:center}
+    header h1{margin:0;font-size:32px}
+    header p{margin-top:8px;font-size:14px}
+    nav{background:#111;padding:12px;text-align:center}
+    nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:bold;font-size:14px}
+    .container{padding:20px;max-width:1000px;margin:auto}
+    h2{margin-top:0}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+    .card{background:#fff;padding:15px;border-radius:12px;box-shadow:0 3px 8px rgba(0,0,0,0.08);text-align:center}
+    .card h3{margin:10px 0;font-size:16px}
+    .btn{display:inline-block;margin-top:10px;padding:10px 12px;background:#0a7d2c;color:#fff;text-decoration:none;border-radius:6px;font-size:13px}
+    .btn:hover{background:#066522}
+    footer{background:#111;color:#fff;text-align:center;padding:15px;margin-top:20px}
+  </style>
 </head>
-<body><header>
-<h1>AgroMarket</h1>
-<p>Connecting Farmers to Buyers</p>
-</header><nav>
-<a href="#">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav><section class="hero">
-<h1>Fresh Farm Produce</h1>
-<p>Order quality farm products directly from trusted farmers.</p>
-<button onclick="orderNow()">Order Now</button>
-</section><section id="products">
-<h2>Our Products</h2>
-<div class="products">
-<div class="card"><h3>Maize</h3><p>₦500/kg</p></div>
-<div class="card"><h3>Rice</h3><p>₦700/kg</p></div>
-<div class="card"><h3>Tomatoes</h3><p>₦400/basket</p></div>
-<div class="card"><h3>Yam</h3><p>₦1500/tuber</p></div>
-</div>
-</section><section id="about" class="about">
-<h2>About Us</h2>
-<p>AgroMarket is a platform that connects farmers directly with buyers, ensuring fair prices and fresh products.</p>
-</section><section id="contact" class="contact">
-<h2>Contact Us</h2>
-<p>Phone: +234 XXX XXX XXXX</p>
-<p>Email: agromarket@email.com</p>
-<button onclick="contactWhatsApp()">Chat on WhatsApp</button>
-</section><footer>
-<p>© 2026 AgroMarket</p>
-</footer><script>
-function orderNow() {
-    alert("Ordering feature coming soon!");
-}
+<body>
 
-function contactWhatsApp() {
-    window.location.href = "https://wa.me/234XXXXXXXXXX";
-}
-</script></body>
+<header>
+  <h1>Agromarket</h1>
+  <p>Fresh Farm Produce • Bulk Supply • Trusted Quality</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <h2>Welcome</h2>
+  <p>We supply high-quality agricultural products in large quantities across Nigeria. Fast delivery, fair prices, and reliable service.</p>
+</div>
+
+<div class="container" id="products">
+  <h2>Our Products</h2>
+  <div class="products">
+
+    <div class="card"><h3>Rice</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Rice">Order on WhatsApp</a></div>
+    <div class="card"><h3>Beans</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Beans">Order on WhatsApp</a></div>
+    <div class="card"><h3>Yam</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Yam">Order on WhatsApp</a></div>
+    <div class="card"><h3>Palm Oil</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Palm%20Oil">Order on WhatsApp</a></div>
+    <div class="card"><h3>Ginger (Bag)</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Ginger">Order on WhatsApp</a></div>
+    <div class="card"><h3>Pepper (Bulk)</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Pepper">Order on WhatsApp</a></div>
+    <div class="card"><h3>Tomato</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Tomato">Order on WhatsApp</a></div>
+    <div class="card"><h3>Onion</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Onion">Order on WhatsApp</a></div>
+    <div class="card"><h3>Honey</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Honey">Order on WhatsApp</a></div>
+    <div class="card"><h3>Groundnuts</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Groundnuts">Order on WhatsApp</a></div>
+    <div class="card"><h3>Maize</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Maize">Order on WhatsApp</a></div>
+    <div class="card"><h3>Potato</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Potato">Order on WhatsApp</a></div>
+    <div class="card"><h3>Garri</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Garri">Order on WhatsApp</a></div>
+    <div class="card"><h3>Cashew Nuts</h3><a class="btn" href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Cashew%20Nuts">Order on WhatsApp</a></div>
+
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> +2349161888588</p>
+  <p><strong>Email:</strong> agromarket768@email.com</p>
+  <p>Click any product above to order instantly via WhatsApp.</p>
+</div>
+
+<footer>
+  <p>© 2026 Agromarket. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
