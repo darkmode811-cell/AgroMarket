@@ -4,25 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroMarket</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background: white;
+        }
+
+        .hero h1 {
+            color: #2e7d32;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #2e7d32;
+        }
+
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>🌾 AgroMarket</h1>
-        <p>Connecting farmers and buyers easily</p>
-    </header>
+<header>
+    <h1>AgroMarket</h1>
+    <p>Your Trusted Farm Produce Marketplace</p>
+</header>
 
-    <main>
-        <section>
-            <h2>Add a Product</h2>
-            
-            <input type="text" placeholder="Product name"><br><br>
-            <input type="number" placeholder="Price"><br><br>
-            <input type="text" placeholder="Location"><br><br>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+</nav>
 
-            <button>Add Product</button>
-        </section>
-    </main>
+<section class="hero">
+    <h1>Fresh Farm Products Delivered to You</h1>
+    <p>Buy directly from farmers at affordable prices.</p>
+</section>
+
+<section class="products">
+    <div class="card">
+        <h3>Maize</h3>
+        <p>₦500 per kg</p>
+    </div>
+
+    <div class="card">
+        <h3>Rice</h3>
+        <p>₦700 per kg</p>
+    </div>
+
+    <div class="card">
+        <h3>Tomatoes</h3>
+        <p>₦400 per basket</p>
+    </div>
+
+    <div class="card">
+        <h3>Yam</h3>
+        <p>₦1500 per tuber</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AgroMarket | All rights reserved</p>
+</footer>
 
 </body>
 </html>
